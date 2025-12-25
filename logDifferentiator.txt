@@ -1,0 +1,1 @@
+[DEBUG] physicalModel.cpp:66:calculateModel(): amountPoints = 815
