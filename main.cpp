@@ -28,7 +28,8 @@ int main(){
     size_t amountPoints = calculateModel(&physSystem, &ball, &field, time, xData, yData);    
 
     size_t frameRate = (size_t) (1 / _TIME_STEP((&physSystem)));
-    pythonPointsGenAnimation(xData, yData, amountPoints, frameRate);
+    pythonPointsGenAnimation(xData, yData, amountPoints, frameRate, 
+                            _CENTER_X((&field)), _CENTER_Y((&field)), _RADIUS((&field)));
 
     free(xData);
     free(yData);

@@ -76,6 +76,9 @@ size_t calculateModel(physicalSystem_t* physSystem, ball_t* ball, centralForceFi
             _VX(ball) += _AX(ball) * _TIME_STEP(physSystem);
             _VY(ball) += _AY(ball) * _TIME_STEP(physSystem);
         }
+        _AX(ball) = 0;
+        _AY(ball) = 0;
+
         _X(ball) += _VX(ball) * _TIME_STEP(physSystem);
         _Y(ball) += _VY(ball) * _TIME_STEP(physSystem);
 

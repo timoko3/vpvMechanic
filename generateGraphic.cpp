@@ -9,6 +9,8 @@ const char* PY_GEN_GRAPHIC_FILE_NAME  = "testGraphic.py";
 
 static FILE* pythonGenGraphicPreamble();
 static void initPointsData(FILE* pyFilePtr, double* data, size_t amountPoints);
+static void createFieldCircle(FILE* pyFilePtr, 
+                            double centerX, double centerY, double radius);
 
 void pythonFuncGenAnimation(){
     FILE* pyFilePtr = pythonGenGraphicPreamble();
@@ -24,7 +26,7 @@ void pythonFuncGenAnimation(){
     fprintf(pyFilePtr, "ax.set_xlabel(\"x\")\n");
     fprintf(pyFilePtr, "ax.set_ylabel(\"y\")\n");
     fprintf(pyFilePtr, "ax.grid(True)\n\n");
-    
+
     fprintf(pyFilePtr, "#Создание фигур\n");
     fprintf(pyFilePtr, "line1,  = ax.plot([], [], linewidth=2)\n");
     fprintf(pyFilePtr, "point1, = ax.plot([], [], 'ro', markersize=8)\n\n");
@@ -59,8 +61,12 @@ void pythonFuncGenAnimation(){
     system("python testGraphic.py");
 }
 
-void pythonPointsGenAnimation(double* x, double* y, size_t amountPoints, size_t frameRate){
+void pythonPointsGenAnimation(double* x, double* y, 
+                            size_t amountPoints, size_t frameRate,
+                            double centerX, double centerY, double radius){
     FILE* pyFilePtr = pythonGenGraphicPreamble();
+
+    createFieldCircle(pyFilePtr, centerX, centerY, radius);
 
     fprintf(pyFilePtr, "x_vals_1 = ");
     initPointsData(pyFilePtr, x, amountPoints);
@@ -75,6 +81,11 @@ void pythonPointsGenAnimation(double* x, double* y, size_t amountPoints, size_t 
     fprintf(pyFilePtr, "ax.set_ylabel(\"y\")\n");
     fprintf(pyFilePtr, "ax.grid(True)\n\n");
     
+    fprintf(pyFilePtr, "# Отрисовка окружности\n");
+    fprintf(pyFilePtr,
+    "circle_line, = ax.plot(x_circle, y_circle, "
+    "linestyle='--', color='orange', linewidth=2)\n\n");
+
     fprintf(pyFilePtr, "#Создание фигур\n");
     fprintf(pyFilePtr, "line1,  = ax.plot([], [], linewidth=2)\n");
     fprintf(pyFilePtr, "point1, = ax.plot([], [], 'ro', markersize=8)\n\n");
@@ -123,6 +134,20 @@ static void initPointsData(FILE* pyFilePtr, double* data, size_t amountPoints){
     fprintf(pyFilePtr, "%.4f])\n", data[curPoint]);
 }   
 
+static void createFieldCircle(FILE* pyFilePtr, 
+                            double centerX, double centerY, double radius){
+    fprintf(pyFilePtr, "# Параметры окружности\n");
+    fprintf(pyFilePtr, "cx = %lf\n",  centerX);
+    fprintf(pyFilePtr, "cy = %lf\n",  centerY);
+    fprintf(pyFilePtr, "R = %lf\n\n", radius);
+
+    fprintf(pyFilePtr, "# Подсчет точек окружности\n");
+    fprintf(pyFilePtr, "theta = np.linspace(0, 2*np.pi, 200)\n");
+    fprintf(pyFilePtr, "x_circle = cx + R * np.cos(theta)\n");
+    fprintf(pyFilePtr, "y_circle = cy + R * np.sin(theta)\n\n");
+
+}
+
 static FILE* pythonGenGraphicPreamble(){
     fileDescription pyGenGraphic{
         PY_GEN_GRAPHIC_FILE_NAME,
@@ -139,3 +164,4 @@ static FILE* pythonGenGraphicPreamble(){
 
     return pyFilePtr;
 }
+
