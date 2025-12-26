@@ -1,1 +1,486 @@
-[DEBUG] physicalModel.cpp:66:calculateModel(): amountPoints = 815
+[DEBUG] main.cpp:23:main(): expectedPointsAmount = 100
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.000s | Y: 0.010m | X: 0.003 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.167
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.010s | Y: 0.010m | X: 0.006 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.164
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.020s | Y: 0.010m | X: 0.009 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.161
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.030s | Y: 0.010m | X: 0.012 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.158
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.040s | Y: 0.010m | X: 0.015 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.155
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.050s | Y: 0.010m | X: 0.018 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.152
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.060s | Y: 0.010m | X: 0.021 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.149
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.070s | Y: 0.010m | X: 0.024 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.146
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.080s | Y: 0.010m | X: 0.027 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.143
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.090s | Y: 0.010m | X: 0.030 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.140
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.100s | Y: 0.010m | X: 0.033 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.137
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.110s | Y: 0.010m | X: 0.036 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.134
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.120s | Y: 0.010m | X: 0.039 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.131
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.130s | Y: 0.010m | X: 0.042 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.128
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.140s | Y: 0.010m | X: 0.045 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.125
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.150s | Y: 0.010m | X: 0.048 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.122
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.160s | Y: 0.010m | X: 0.051 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.119
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.170s | Y: 0.010m | X: 0.054 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.116
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.180s | Y: 0.010m | X: 0.057 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.113
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.190s | Y: 0.010m | X: 0.060 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.110
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.200s | Y: 0.010m | X: 0.063 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.107
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.210s | Y: 0.010m | X: 0.066 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.104
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.220s | Y: 0.010m | X: 0.069 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.101
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.230s | Y: 0.010m | X: 0.072 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.099
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.240s | Y: 0.010m | X: 0.075 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.096
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.250s | Y: 0.010m | X: 0.078 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.093
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.260s | Y: 0.010m | X: 0.081 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.090
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.270s | Y: 0.010m | X: 0.084 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.087
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.280s | Y: 0.010m | X: 0.087 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.084
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.290s | Y: 0.010m | X: 0.090 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.081
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.300s | Y: 0.010m | X: 0.093 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.078
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.310s | Y: 0.010m | X: 0.096 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.075
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.320s | Y: 0.010m | X: 0.099 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.072
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.330s | Y: 0.010m | X: 0.102 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.069
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.340s | Y: 0.010m | X: 0.105 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.066
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.350s | Y: 0.010m | X: 0.108 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.063
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.360s | Y: 0.010m | X: 0.111 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.060
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.370s | Y: 0.010m | X: 0.114 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.057
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.380s | Y: 0.010m | X: 0.117 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.054
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.390s | Y: 0.010m | X: 0.120 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.051
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.400s | Y: 0.010m | X: 0.123 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.048
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.410s | Y: 0.010m | X: 0.126 | VY: -0.007 | VX: 0.269 | AY: -0.654 | AX: -3.074 | distance = 0.045
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.420s | Y: 0.010m | X: 0.128 | VY: -0.013 | VX: 0.240 | AY: -0.650 | AX: -2.898 | distance = 0.043
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.430s | Y: 0.010m | X: 0.130 | VY: -0.019 | VX: 0.213 | AY: -0.641 | AX: -2.741 | distance = 0.041
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.440s | Y: 0.009m | X: 0.132 | VY: -0.026 | VX: 0.187 | AY: -0.628 | AX: -2.601 | distance = 0.039
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.450s | Y: 0.009m | X: 0.134 | VY: -0.032 | VX: 0.162 | AY: -0.612 | AX: -2.479 | distance = 0.037
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.460s | Y: 0.009m | X: 0.135 | VY: -0.038 | VX: 0.138 | AY: -0.591 | AX: -2.373 | distance = 0.036
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.470s | Y: 0.008m | X: 0.136 | VY: -0.043 | VX: 0.116 | AY: -0.566 | AX: -2.283 | distance = 0.035
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.480s | Y: 0.008m | X: 0.137 | VY: -0.049 | VX: 0.093 | AY: -0.538 | AX: -2.207 | distance = 0.034
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.490s | Y: 0.007m | X: 0.138 | VY: -0.054 | VX: 0.072 | AY: -0.506 | AX: -2.146 | distance = 0.033
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.500s | Y: 0.007m | X: 0.138 | VY: -0.059 | VX: 0.051 | AY: -0.471 | AX: -2.099 | distance = 0.032
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.510s | Y: 0.006m | X: 0.139 | VY: -0.063 | VX: 0.030 | AY: -0.432 | AX: -2.066 | distance = 0.032
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.520s | Y: 0.005m | X: 0.139 | VY: -0.067 | VX: 0.010 | AY: -0.391 | AX: -2.046 | distance = 0.032
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.530s | Y: 0.005m | X: 0.139 | VY: -0.070 | VX: -0.011 | AY: -0.347 | AX: -2.039 | distance = 0.032
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.540s | Y: 0.004m | X: 0.138 | VY: -0.073 | VX: -0.031 | AY: -0.302 | AX: -2.046 | distance = 0.032
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.550s | Y: 0.003m | X: 0.138 | VY: -0.076 | VX: -0.052 | AY: -0.254 | AX: -2.066 | distance = 0.032
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.560s | Y: 0.002m | X: 0.137 | VY: -0.078 | VX: -0.073 | AY: -0.204 | AX: -2.100 | distance = 0.033
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.570s | Y: 0.002m | X: 0.136 | VY: -0.079 | VX: -0.094 | AY: -0.153 | AX: -2.148 | distance = 0.034
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.580s | Y: 0.001m | X: 0.135 | VY: -0.080 | VX: -0.116 | AY: -0.101 | AX: -2.209 | distance = 0.035
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.590s | Y: -0.000m | X: 0.134 | VY: -0.081 | VX: -0.139 | AY: -0.049 | AX: -2.285 | distance = 0.036
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.600s | Y: -0.001m | X: 0.133 | VY: -0.081 | VX: -0.115 | AY: 0.004 | AX: 2.376 | distance = 0.037
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.610s | Y: -0.002m | X: 0.132 | VY: -0.080 | VX: -0.091 | AY: 0.057 | AX: 2.452 | distance = 0.038
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.620s | Y: -0.002m | X: 0.131 | VY: -0.079 | VX: -0.066 | AY: 0.110 | AX: 2.511 | distance = 0.039
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.630s | Y: -0.003m | X: 0.131 | VY: -0.078 | VX: -0.040 | AY: 0.161 | AX: 2.554 | distance = 0.040
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.640s | Y: -0.004m | X: 0.130 | VY: -0.075 | VX: -0.014 | AY: 0.212 | AX: 2.580 | distance = 0.040
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.650s | Y: -0.005m | X: 0.131 | VY: -0.073 | VX: 0.012 | AY: 0.262 | AX: 2.589 | distance = 0.040
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.660s | Y: -0.005m | X: 0.131 | VY: -0.070 | VX: 0.037 | AY: 0.309 | AX: 2.582 | distance = 0.039
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.670s | Y: -0.006m | X: 0.132 | VY: -0.066 | VX: 0.063 | AY: 0.355 | AX: 2.557 | distance = 0.039
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.680s | Y: -0.007m | X: 0.132 | VY: -0.062 | VX: 0.088 | AY: 0.398 | AX: 2.516 | distance = 0.038
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.690s | Y: -0.007m | X: 0.134 | VY: -0.058 | VX: 0.113 | AY: 0.439 | AX: 2.459 | distance = 0.037
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.700s | Y: -0.008m | X: 0.135 | VY: -0.053 | VX: 0.137 | AY: 0.477 | AX: 2.385 | distance = 0.036
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.710s | Y: -0.008m | X: 0.136 | VY: -0.048 | VX: 0.160 | AY: 0.511 | AX: 2.296 | distance = 0.035
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.720s | Y: -0.009m | X: 0.138 | VY: -0.043 | VX: 0.181 | AY: 0.543 | AX: 2.191 | distance = 0.033
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.730s | Y: -0.009m | X: 0.140 | VY: -0.037 | VX: 0.202 | AY: 0.570 | AX: 2.073 | distance = 0.031
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.740s | Y: -0.009m | X: 0.143 | VY: -0.031 | VX: 0.222 | AY: 0.594 | AX: 1.940 | distance = 0.029
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.750s | Y: -0.010m | X: 0.145 | VY: -0.025 | VX: 0.240 | AY: 0.615 | AX: 1.796 | distance = 0.027
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.760s | Y: -0.010m | X: 0.147 | VY: -0.018 | VX: 0.256 | AY: 0.631 | AX: 1.639 | distance = 0.025
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.770s | Y: -0.010m | X: 0.150 | VY: -0.012 | VX: 0.271 | AY: 0.643 | AX: 1.472 | distance = 0.022
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.780s | Y: -0.010m | X: 0.153 | VY: -0.005 | VX: 0.284 | AY: 0.651 | AX: 1.295 | distance = 0.020
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.790s | Y: -0.010m | X: 0.156 | VY: 0.001 | VX: 0.295 | AY: 0.654 | AX: 1.109 | distance = 0.017
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.800s | Y: -0.010m | X: 0.159 | VY: 0.008 | VX: 0.304 | AY: 0.654 | AX: 0.916 | distance = 0.015
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.810s | Y: -0.010m | X: 0.162 | VY: 0.014 | VX: 0.311 | AY: 0.649 | AX: 0.718 | distance = 0.013
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.820s | Y: -0.010m | X: 0.165 | VY: 0.020 | VX: 0.316 | AY: 0.639 | AX: 0.514 | distance = 0.011
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.830s | Y: -0.009m | X: 0.168 | VY: 0.027 | VX: 0.319 | AY: 0.626 | AX: 0.308 | distance = 0.009
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.840s | Y: -0.009m | X: 0.172 | VY: 0.033 | VX: 0.320 | AY: 0.609 | AX: 0.099 | distance = 0.009
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.850s | Y: -0.009m | X: 0.175 | VY: 0.027 | VX: 0.319 | AY: -0.587 | AX: -0.111 | distance = 0.010
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.860s | Y: -0.008m | X: 0.178 | VY: 0.021 | VX: 0.316 | AY: -0.569 | AX: -0.319 | distance = 0.012
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.870s | Y: -0.008m | X: 0.181 | VY: 0.016 | VX: 0.311 | AY: -0.556 | AX: -0.526 | distance = 0.014
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.880s | Y: -0.008m | X: 0.184 | VY: 0.010 | VX: 0.303 | AY: -0.545 | AX: -0.729 | distance = 0.016
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.890s | Y: -0.008m | X: 0.187 | VY: 0.005 | VX: 0.294 | AY: -0.539 | AX: -0.927 | distance = 0.019
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.900s | Y: -0.008m | X: 0.190 | VY: -0.000 | VX: 0.283 | AY: -0.535 | AX: -1.120 | distance = 0.022
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.910s | Y: -0.008m | X: 0.193 | VY: -0.006 | VX: 0.270 | AY: -0.536 | AX: -1.305 | distance = 0.024
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.920s | Y: -0.008m | X: 0.195 | VY: -0.011 | VX: 0.255 | AY: -0.539 | AX: -1.481 | distance = 0.027
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.930s | Y: -0.009m | X: 0.198 | VY: -0.017 | VX: 0.239 | AY: -0.547 | AX: -1.648 | distance = 0.029
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.940s | Y: -0.009m | X: 0.200 | VY: -0.022 | VX: 0.220 | AY: -0.558 | AX: -1.804 | distance = 0.031
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.950s | Y: -0.009m | X: 0.202 | VY: -0.028 | VX: 0.201 | AY: -0.572 | AX: -1.948 | distance = 0.033
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.960s | Y: -0.009m | X: 0.204 | VY: -0.034 | VX: 0.180 | AY: -0.591 | AX: -2.080 | distance = 0.035
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.970s | Y: -0.010m | X: 0.205 | VY: -0.040 | VX: 0.158 | AY: -0.613 | AX: -2.198 | distance = 0.037
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.980s | Y: -0.010m | X: 0.207 | VY: -0.046 | VX: 0.135 | AY: -0.639 | AX: -2.301 | distance = 0.038
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.990s | Y: -0.011m | X: 0.208 | VY: -0.053 | VX: 0.111 | AY: -0.669 | AX: -2.390 | distance = 0.039
+
+[DEBUG] physicalModel.cpp:90:calculateModel(): amountPoints = 100
+[DEBUG] main.cpp:23:main(): expectedPointsAmount = 100
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.000s | Y: 0.010m | X: 0.003 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.167
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.010s | Y: 0.010m | X: 0.006 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.164
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.020s | Y: 0.010m | X: 0.009 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.161
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.030s | Y: 0.010m | X: 0.012 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.158
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.040s | Y: 0.010m | X: 0.015 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.155
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.050s | Y: 0.010m | X: 0.018 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.152
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.060s | Y: 0.010m | X: 0.021 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.149
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.070s | Y: 0.010m | X: 0.024 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.146
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.080s | Y: 0.010m | X: 0.027 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.143
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.090s | Y: 0.010m | X: 0.030 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.140
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.100s | Y: 0.010m | X: 0.033 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.137
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.110s | Y: 0.010m | X: 0.036 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.134
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.120s | Y: 0.010m | X: 0.039 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.131
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.130s | Y: 0.010m | X: 0.042 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.128
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.140s | Y: 0.010m | X: 0.045 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.125
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.150s | Y: 0.010m | X: 0.048 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.122
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.160s | Y: 0.010m | X: 0.051 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.119
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.170s | Y: 0.010m | X: 0.054 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.116
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.180s | Y: 0.010m | X: 0.057 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.113
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.190s | Y: 0.010m | X: 0.060 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.110
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.200s | Y: 0.010m | X: 0.063 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.107
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.210s | Y: 0.010m | X: 0.066 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.104
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.220s | Y: 0.010m | X: 0.069 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.101
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.230s | Y: 0.010m | X: 0.072 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.099
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.240s | Y: 0.010m | X: 0.075 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.096
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.250s | Y: 0.010m | X: 0.078 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.093
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.260s | Y: 0.010m | X: 0.081 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.090
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.270s | Y: 0.010m | X: 0.084 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.087
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.280s | Y: 0.010m | X: 0.087 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.084
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.290s | Y: 0.010m | X: 0.090 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.081
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.300s | Y: 0.010m | X: 0.093 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.078
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.310s | Y: 0.010m | X: 0.096 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.075
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.320s | Y: 0.010m | X: 0.099 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.072
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.330s | Y: 0.010m | X: 0.102 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.069
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.340s | Y: 0.010m | X: 0.105 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.066
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.350s | Y: 0.010m | X: 0.108 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.063
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.360s | Y: 0.010m | X: 0.111 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.060
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.370s | Y: 0.010m | X: 0.114 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.057
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.380s | Y: 0.010m | X: 0.117 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.054
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.390s | Y: 0.010m | X: 0.120 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.051
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.400s | Y: 0.010m | X: 0.123 | VY: 0.000 | VX: 0.300 | AY: 0.000 | AX: 0.000 | distance = 0.048
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.410s | Y: 0.010m | X: 0.126 | VY: -0.007 | VX: 0.331 | AY: -0.654 | AX: 3.074 | distance = 0.045
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.420s | Y: 0.010m | X: 0.130 | VY: -0.013 | VX: 0.359 | AY: -0.650 | AX: 2.857 | distance = 0.041
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.430s | Y: 0.010m | X: 0.134 | VY: -0.019 | VX: 0.386 | AY: -0.641 | AX: 2.623 | distance = 0.037
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.440s | Y: 0.009m | X: 0.138 | VY: -0.026 | VX: 0.409 | AY: -0.628 | AX: 2.370 | distance = 0.033
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.450s | Y: 0.009m | X: 0.142 | VY: -0.032 | VX: 0.430 | AY: -0.612 | AX: 2.103 | distance = 0.029
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.460s | Y: 0.009m | X: 0.147 | VY: -0.038 | VX: 0.448 | AY: -0.591 | AX: 1.821 | distance = 0.025
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.470s | Y: 0.008m | X: 0.151 | VY: -0.043 | VX: 0.464 | AY: -0.566 | AX: 1.528 | distance = 0.020
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.480s | Y: 0.008m | X: 0.156 | VY: -0.049 | VX: 0.476 | AY: -0.538 | AX: 1.225 | distance = 0.016
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.490s | Y: 0.007m | X: 0.161 | VY: -0.054 | VX: 0.485 | AY: -0.506 | AX: 0.913 | distance = 0.012
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.500s | Y: 0.007m | X: 0.166 | VY: -0.059 | VX: 0.491 | AY: -0.471 | AX: 0.596 | distance = 0.008
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.510s | Y: 0.006m | X: 0.171 | VY: -0.063 | VX: 0.494 | AY: -0.432 | AX: 0.275 | distance = 0.006
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.520s | Y: 0.005m | X: 0.176 | VY: -0.067 | VX: 0.493 | AY: -0.391 | AX: -0.048 | distance = 0.008
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.530s | Y: 0.005m | X: 0.181 | VY: -0.070 | VX: 0.490 | AY: -0.347 | AX: -0.371 | distance = 0.012
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.540s | Y: 0.004m | X: 0.185 | VY: -0.073 | VX: 0.483 | AY: -0.302 | AX: -0.691 | distance = 0.016
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.550s | Y: 0.003m | X: 0.190 | VY: -0.076 | VX: 0.473 | AY: -0.254 | AX: -1.007 | distance = 0.020
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.560s | Y: 0.002m | X: 0.195 | VY: -0.078 | VX: 0.460 | AY: -0.204 | AX: -1.316 | distance = 0.025
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.570s | Y: 0.002m | X: 0.199 | VY: -0.079 | VX: 0.443 | AY: -0.153 | AX: -1.616 | distance = 0.029
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.580s | Y: 0.001m | X: 0.203 | VY: -0.080 | VX: 0.424 | AY: -0.101 | AX: -1.906 | distance = 0.033
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.590s | Y: -0.000m | X: 0.207 | VY: -0.081 | VX: 0.402 | AY: -0.049 | AX: -2.184 | distance = 0.037
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.600s | Y: -0.001m | X: 0.211 | VY: -0.081 | VX: 0.378 | AY: 0.004 | AX: -2.447 | distance = 0.041
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.610s | Y: -0.002m | X: 0.215 | VY: -0.080 | VX: 0.351 | AY: 0.057 | AX: -2.694 | distance = 0.045
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.620s | Y: -0.002m | X: 0.218 | VY: -0.079 | VX: 0.322 | AY: 0.110 | AX: -2.924 | distance = 0.048
+
+[DEBUG] physicalModel.cpp:71:calculateModel(): Попал в зону действия поля
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.630s | Y: -0.003m | X: 0.221 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.051
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.640s | Y: -0.004m | X: 0.224 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.054
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.650s | Y: -0.005m | X: 0.227 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.057
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.660s | Y: -0.006m | X: 0.230 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.060
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.670s | Y: -0.006m | X: 0.232 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.063
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.680s | Y: -0.007m | X: 0.235 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.066
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.690s | Y: -0.008m | X: 0.238 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.069
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.700s | Y: -0.009m | X: 0.241 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.072
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.710s | Y: -0.009m | X: 0.244 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.075
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.720s | Y: -0.010m | X: 0.247 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.078
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.730s | Y: -0.011m | X: 0.250 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.081
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.740s | Y: -0.012m | X: 0.253 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.084
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.750s | Y: -0.013m | X: 0.256 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.087
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.760s | Y: -0.013m | X: 0.259 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.090
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.770s | Y: -0.014m | X: 0.261 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.093
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.780s | Y: -0.015m | X: 0.264 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.096
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.790s | Y: -0.016m | X: 0.267 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.099
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.800s | Y: -0.016m | X: 0.270 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.102
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.810s | Y: -0.017m | X: 0.273 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.105
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.820s | Y: -0.018m | X: 0.276 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.108
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.830s | Y: -0.019m | X: 0.279 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.111
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.840s | Y: -0.020m | X: 0.282 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.114
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.850s | Y: -0.020m | X: 0.285 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.117
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.860s | Y: -0.021m | X: 0.288 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.120
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.870s | Y: -0.022m | X: 0.291 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.123
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.880s | Y: -0.023m | X: 0.293 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.126
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.890s | Y: -0.023m | X: 0.296 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.129
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.900s | Y: -0.024m | X: 0.299 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.132
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.910s | Y: -0.025m | X: 0.302 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.134
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.920s | Y: -0.026m | X: 0.305 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.137
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.930s | Y: -0.027m | X: 0.308 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.140
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.940s | Y: -0.027m | X: 0.311 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.143
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.950s | Y: -0.028m | X: 0.314 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.146
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.960s | Y: -0.029m | X: 0.317 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.149
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.970s | Y: -0.030m | X: 0.320 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.152
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.980s | Y: -0.030m | X: 0.322 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.155
+
+[DEBUG] physicalModel.cpp:84:calculateModel(): Time: 0.990s | Y: -0.031m | X: 0.325 | VY: -0.078 | VX: 0.290 | AY: 0.161 | AX: -3.134 | distance = 0.158
+
+[DEBUG] physicalModel.cpp:90:calculateModel(): amountPoints = 100

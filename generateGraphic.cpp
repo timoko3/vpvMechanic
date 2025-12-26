@@ -117,10 +117,10 @@ static void initPointsData(FILE* pyFilePtr, double* data, size_t amountPoints){
     
     size_t curPoint = 0;
     for(; curPoint < amountPoints - 1; curPoint++){
-        fprintf(pyFilePtr, "%.2f, ", data[curPoint]);
+        fprintf(pyFilePtr, "%.4f, ", data[curPoint]);
     }
 
-    fprintf(pyFilePtr, "%.2f])\n", data[curPoint]);
+    fprintf(pyFilePtr, "%.4f])\n", data[curPoint]);
 }   
 
 static FILE* pythonGenGraphicPreamble(){
