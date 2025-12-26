@@ -4,6 +4,7 @@
 
 #include <assert.h>
 #include <stdlib.h>
+#include <malloc.h>
 
 const char* PY_GEN_GRAPHIC_FILE_NAME  = "testGraphic.py";
 
@@ -11,6 +12,29 @@ static FILE* pythonGenGraphicPreamble();
 static void initPointsData(FILE* pyFilePtr, double* data, size_t amountPoints);
 static void createFieldCircle(FILE* pyFilePtr, 
                             double centerX, double centerY, double radius);
+
+graphicData_t* graphicsDataArrayCtor(graphicData_t** graphicsData, size_t amountGraphics, size_t expectedPointsAmount){
+    *graphicsData = (graphicData_t*) calloc(amountGraphics, sizeof(graphicData_t));
+    assert(graphicsData);
+
+    for(size_t curGraphicData = 0; curGraphicData < amountGraphics; curGraphicData++){
+        (*graphicsData)[curGraphicData].xData = (double*) calloc(expectedPointsAmount + 1, sizeof(double));
+        (*graphicsData)[curGraphicData].yData = (double*) calloc(expectedPointsAmount + 1, sizeof(double));
+    }
+
+    return *graphicsData;
+}
+
+graphicData_t* graphicsDataArrayDtor(graphicData_t** graphicsData, size_t amountGraphics, size_t expectedPointsAmount){
+    for(size_t curGraphicData = 0; curGraphicData < amountGraphics; curGraphicData++){
+        free((*graphicsData)[curGraphicData].xData);
+        free((*graphicsData)[curGraphicData].yData);
+    }
+
+    free(graphicsData);
+
+    return NULL;
+}
 
 void pythonFuncGenAnimation(){
     FILE* pyFilePtr = pythonGenGraphicPreamble();
@@ -61,46 +85,60 @@ void pythonFuncGenAnimation(){
     system("python testGraphic.py");
 }
 
-void pythonPointsGenAnimation(double* x, double* y, 
+void pythonPointsGenAnimation(graphicData_t* graphicsData, size_t amountGraphics,
                             size_t amountPoints, size_t frameRate,
                             double centerX, double centerY, double radius){
     FILE* pyFilePtr = pythonGenGraphicPreamble();
 
     createFieldCircle(pyFilePtr, centerX, centerY, radius);
 
-    fprintf(pyFilePtr, "x_vals_1 = ");
-    initPointsData(pyFilePtr, x, amountPoints);
-
-    fprintf(pyFilePtr, "y_vals_1 = ");
-    initPointsData(pyFilePtr, y, amountPoints);
-
-    fprintf(pyFilePtr, "fig, ax = plt.subplots(figsize=(10, 6))\n");
-    fprintf(pyFilePtr, "ax.set_xlim(min(x_vals_1), max(x_vals_1))\n");
-    fprintf(pyFilePtr, "ax.set_ylim(min(y_vals_1), max(y_vals_1))\n");
-    fprintf(pyFilePtr, "ax.set_xlabel(\"x\")\n");
-    fprintf(pyFilePtr, "ax.set_ylabel(\"y\")\n");
-    fprintf(pyFilePtr, "ax.grid(True)\n\n");
-    
     fprintf(pyFilePtr, "# Отрисовка окружности\n");
     fprintf(pyFilePtr,
     "circle_line, = ax.plot(x_circle, y_circle, "
     "linestyle='--', color='orange', linewidth=2)\n\n");
 
+    for(size_t curGraphic = 0; curGraphic < amountGraphics; curGraphic++){
+        fprintf(pyFilePtr, "x_vals_%lu = ", curGraphic + 1);
+        initPointsData(pyFilePtr, graphicsData[curGraphic].xData, amountPoints);
+
+        fprintf(pyFilePtr, "y_vals_%lu = ", curGraphic + 1);
+        initPointsData(pyFilePtr, graphicsData[curGraphic].yData, amountPoints);
+    }
+    fprintf(pyFilePtr, "\n");
+
     fprintf(pyFilePtr, "#Создание фигур\n");
-    fprintf(pyFilePtr, "line1,  = ax.plot([], [], linewidth=2)\n");
-    fprintf(pyFilePtr, "point1, = ax.plot([], [], 'ro', markersize=8)\n\n");
+
+    for(size_t curGraphic = 0; curGraphic < amountGraphics; curGraphic++){
+        fprintf(pyFilePtr, "line%lu,  = ax.plot([], [], linewidth=2, alpha = 0.5)\n", curGraphic + 1);
+        fprintf(pyFilePtr, "point%lu, = ax.plot([], [], 'ro', markersize=8)\n\n", curGraphic + 1);
+    }
 
     fprintf(pyFilePtr, "#Инициализация\n");
     fprintf(pyFilePtr, "def init():\n"); 
-    fprintf(pyFilePtr, "\tline1.set_data([], [])\n"); 
-    fprintf(pyFilePtr, "\tpoint1.set_data([], [])\n\n"); 
-    fprintf(pyFilePtr, "\treturn line1, point1\n\n"); 
+    for(size_t curGraphic = 0; curGraphic < amountGraphics; curGraphic++){
+            fprintf(pyFilePtr, "\tline%lu.set_data([], [])\n", curGraphic + 1); 
+            fprintf(pyFilePtr, "\tpoint%lu.set_data([], [])\n\n", curGraphic + 1); 
+    }
+
+    fprintf(pyFilePtr, "\treturn");
+    for(size_t curGraphic = 0; curGraphic < amountGraphics; curGraphic++){
+        fprintf(pyFilePtr, " line%lu, point%lu,", curGraphic + 1, curGraphic + 1);
+    }
+    fprintf(pyFilePtr, "\n\n");
 
     fprintf(pyFilePtr, "#Обновление кадра\n");
     fprintf(pyFilePtr, "def update(frame):\n"); 
-    fprintf(pyFilePtr, "\tline1.set_data(x_vals_1[:frame+1], y_vals_1[:frame+1])\n"); 
-    fprintf(pyFilePtr, "\tpoint1.set_data([x_vals_1[frame]], [y_vals_1[frame]])\n"); 
-    fprintf(pyFilePtr, "\treturn line1, point1\n\n"); 
+
+    for(size_t curGraphic = 0; curGraphic < amountGraphics; curGraphic++){
+        fprintf(pyFilePtr, "\tline%lu.set_data(x_vals_1[:frame+1], y_vals_%lu[:frame+1])\n", curGraphic + 1, curGraphic + 1); 
+        fprintf(pyFilePtr, "\tpoint%lu.set_data([x_vals_1[frame]], [y_vals_%lu[frame]])\n",  curGraphic + 1, curGraphic + 1); 
+    }
+
+    fprintf(pyFilePtr, "\treturn");
+    for(size_t curGraphic = 0; curGraphic < amountGraphics; curGraphic++){
+        fprintf(pyFilePtr, " line%lu, point%lu,", curGraphic + 1, curGraphic + 1);
+    }
+    fprintf(pyFilePtr, "\n\n");
 
     fprintf(pyFilePtr, "#Создание анимации\n");
     fprintf(pyFilePtr, "ani = FuncAnimation(\n");
@@ -161,6 +199,13 @@ static FILE* pythonGenGraphicPreamble(){
 
     fprintf(pyFilePtr, "import matplotlib.pyplot as plt\n");
     fprintf(pyFilePtr, "from matplotlib.animation import FuncAnimation\n\n");
+
+    fprintf(pyFilePtr, "fig, ax = plt.subplots(figsize=(10, 6))\n");
+    fprintf(pyFilePtr, "ax.set_xlim(0, 0.2)\n");
+    fprintf(pyFilePtr, "ax.set_ylim(-0.06, 0.06)\n");
+    fprintf(pyFilePtr, "ax.set_xlabel(\"x\")\n");
+    fprintf(pyFilePtr, "ax.set_ylabel(\"y\")\n");
+    fprintf(pyFilePtr, "ax.grid(True)\n\n");
 
     return pyFilePtr;
 }
