@@ -9,7 +9,7 @@
 #include <math.h>
 
 const double EARTH_GRAVITY     = 9.81;
-const double TIME_STEP_DEFAULT = 0.01;
+const double TIME_STEP_DEFAULT = 0.0025;
 const double CURVE_RADIUS      = 0.15;
 
 static double countVectorAngle(double x1, double y1, 
@@ -70,14 +70,16 @@ size_t calculateModel(physicalSystem_t* physSystem, ball_t* ball, centralForceFi
         if(_RADIUS(centralForceField) > _DISTANCE(ball, centralForceField)){
             LPRINTF("Попал в зону действия поля");
 
-            _AX(ball) = _GRAVITY(physSystem) * (_DISTANCE(ball, centralForceField) / CURVE_RADIUS) * cos(_VECTOR_ANGLE(_X(ball), _Y(ball), _CENTER_X(centralForceField), _CENTER_Y(centralForceField)));
-            _AY(ball) = _GRAVITY(physSystem) * (_DISTANCE(ball, centralForceField) / CURVE_RADIUS) * sin(_VECTOR_ANGLE(_X(ball), _Y(ball), _CENTER_X(centralForceField), _CENTER_Y(centralForceField)));
+            _AX(ball) = _GRAVITY(physSystem) * (_DISTANCE(ball, centralForceField) / CURVE_RADIUS) * sqrt(5.0 / 7.0) * cos(_VECTOR_ANGLE(_X(ball), _Y(ball), _CENTER_X(centralForceField), _CENTER_Y(centralForceField)));
+            _AY(ball) = _GRAVITY(physSystem) * (_DISTANCE(ball, centralForceField) / CURVE_RADIUS) * sqrt(5.0 / 7.0) * sin(_VECTOR_ANGLE(_X(ball), _Y(ball), _CENTER_X(centralForceField), _CENTER_Y(centralForceField)));
 
             _VX(ball) += _AX(ball) * _TIME_STEP(physSystem);
             _VY(ball) += _AY(ball) * _TIME_STEP(physSystem);
         }
-        _AX(ball) = 0;
-        _AY(ball) = 0;
+        else{
+            _AX(ball) = 0;
+            _AY(ball) = 0;
+        }
 
         _X(ball) += _VX(ball) * _TIME_STEP(physSystem);
         _Y(ball) += _VY(ball) * _TIME_STEP(physSystem);

@@ -31,7 +31,7 @@ graphicData_t* graphicsDataArrayDtor(graphicData_t** graphicsData, size_t amount
         free((*graphicsData)[curGraphicData].yData);
     }
 
-    free(graphicsData);
+    free(*graphicsData);
 
     return NULL;
 }
@@ -106,6 +106,61 @@ void pythonPointsGenAnimation(graphicData_t* graphicsData, size_t amountGraphics
     }
     fprintf(pyFilePtr, "\n");
 
+
+    fprintf(pyFilePtr, "# Точки пересечения с осью X\n");
+    fprintf(pyFilePtr, "x_cross = []\n");
+    fprintf(pyFilePtr, "y_cross = []\n\n");
+
+    for(size_t curGraphic = 0; curGraphic < amountGraphics; curGraphic++){
+        fprintf(pyFilePtr,
+            "idx = np.where(np.diff(np.sign(y_vals_%lu)))[0]\n",
+            curGraphic + 1
+        );
+        fprintf(pyFilePtr,
+            "if len(idx) > 0:\n"
+            "\ti = idx[0]\n"
+            "\tx_cross.append(x_vals_1[i])\n"
+            "\ty_cross.append(0)\n"
+            "else:\n"
+            "\tx_cross.append(None)\n"
+            "\ty_cross.append(None)\n\n"
+        );
+    }
+
+
+    fprintf(pyFilePtr, "# Оставляем только min и max пересечения\n");
+    fprintf(pyFilePtr, "valid_x = [x for x in x_cross if x is not None]\n");
+    fprintf(pyFilePtr, "if len(valid_x) >= 2:\n");
+    fprintf(pyFilePtr, "\tx_min = min(valid_x)\n");
+    fprintf(pyFilePtr, "\tx_max = max(valid_x)\n");
+    fprintf(pyFilePtr, "\tx_sel = [x_min, x_max]\n");
+    fprintf(pyFilePtr, "elif len(valid_x) == 1:\n");
+    fprintf(pyFilePtr, "\tx_sel = [valid_x[0]]\n");
+    fprintf(pyFilePtr, "else:\n");
+    fprintf(pyFilePtr, "\tx_sel = []\n\n");
+
+    fprintf(pyFilePtr,
+        "cross_points = ax.plot(x_sel, [0]*len(x_sel), "
+        "'ks', markersize=8, zorder=5)\n\n"
+    );
+
+    fprintf(pyFilePtr, "# Читаемые подписи (верх/низ)\n");
+    fprintf(pyFilePtr, "offsets = [15, -25]\n");  // вверх, вниз
+    fprintf(pyFilePtr, "for i, x in enumerate(x_sel):\n");
+    fprintf(pyFilePtr,
+        "\tax.annotate(\n"
+        "\t\tf\"x = {x:.4f}\",\n"
+        "\t\txy=(x, 0),\n"
+        "\t\txytext=(0, offsets[i %% 2]),\n"
+        "\t\ttextcoords='offset points',\n"
+        "\t\tfontsize=10,\n"
+        "\t\tcolor='black',\n"
+        "\t\tbbox=dict(boxstyle='round,pad=0.3', fc='white', ec='black', alpha=0.85),\n"
+        "\t\tarrowprops=dict(arrowstyle='->', color='black', lw=0.8),\n"
+        "\t\tzorder=6\n"
+        "\t)\n\n"
+    );
+
     fprintf(pyFilePtr, "#Создание фигур\n");
 
     for(size_t curGraphic = 0; curGraphic < amountGraphics; curGraphic++){
@@ -166,10 +221,10 @@ static void initPointsData(FILE* pyFilePtr, double* data, size_t amountPoints){
     
     size_t curPoint = 0;
     for(; curPoint < amountPoints - 1; curPoint++){
-        fprintf(pyFilePtr, "%.4f, ", data[curPoint]);
+        fprintf(pyFilePtr, "%.5f, ", data[curPoint]);
     }
 
-    fprintf(pyFilePtr, "%.4f])\n", data[curPoint]);
+    fprintf(pyFilePtr, "%.5f])\n", data[curPoint]);
 }   
 
 static void createFieldCircle(FILE* pyFilePtr, 
