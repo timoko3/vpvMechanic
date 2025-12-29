@@ -7,7 +7,7 @@
 #include "physicalModel.h"
 #include "DSL.h"
 
-const size_t AMOUNT_BALLS = 13;
+const size_t AMOUNT_BALLS = 201;
 
 int main(){
     physicalSystem_t physSystem;
@@ -30,7 +30,7 @@ int main(){
 
     size_t amountPoints = 0;
     for(size_t curBall = 0; curBall < AMOUNT_BALLS; curBall++){
-        ballCtor(&ball, 5, 0, -0.03 + 0.005 * (double) curBall, 0.42, 0, 0, 0);
+        ballCtor(&ball, 5, 0, -0.05 + 0.0005 * (double) curBall, 0.42, 0, 0, 0);
         amountPoints = calculateModel(&physSystem, &ball, &field, time, graphicsData[curBall].xData, graphicsData[curBall].yData);  
     }
 

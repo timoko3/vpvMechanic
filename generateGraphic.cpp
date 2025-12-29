@@ -8,6 +8,8 @@
 
 const char* PY_GEN_GRAPHIC_FILE_NAME  = "testGraphic.py";
 
+const char* RESULT_FILE_NAME          = "manyBalls.mp4";
+
 static FILE* pythonGenGraphicPreamble();
 static void initPointsData(FILE* pyFilePtr, double* data, size_t amountPoints);
 static void createFieldCircle(FILE* pyFilePtr, 
@@ -164,7 +166,7 @@ void pythonPointsGenAnimation(graphicData_t* graphicsData, size_t amountGraphics
     fprintf(pyFilePtr, "#Создание фигур\n");
 
     for(size_t curGraphic = 0; curGraphic < amountGraphics; curGraphic++){
-        fprintf(pyFilePtr, "line%lu,  = ax.plot([], [], linewidth=2, alpha = 0.5)\n", curGraphic + 1);
+        fprintf(pyFilePtr, "line%lu,  = ax.plot([], [], linewidth=1, alpha = 0.2)\n", curGraphic + 1);
         fprintf(pyFilePtr, "point%lu, = ax.plot([], [], 'ro', markersize=8)\n\n", curGraphic + 1);
     }
 
@@ -206,7 +208,7 @@ void pythonPointsGenAnimation(graphicData_t* graphicsData, size_t amountGraphics
     fprintf(pyFilePtr, ")\n\n");
 
     fprintf(pyFilePtr, "#Сохранение анимации\n");
-    fprintf(pyFilePtr, "ani.save(\"parabola.mp4\", writer=\"ffmpeg\", fps=%lu)\n", frameRate);
+    fprintf(pyFilePtr, "ani.save(\"%s\", writer=\"ffmpeg\", fps=%lu)\n", RESULT_FILE_NAME, frameRate);
 
     fclose(pyFilePtr);
 
